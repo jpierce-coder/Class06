@@ -1,16 +1,21 @@
 function checkPrime(number) {
-    // let isPrime = false;
-    for (let i = 1; i <= number; i++) {
-        if (number % i === 0) {
-            let isPrime = false;
-            console.log(isPrime);
-            // break;
-        } else {
-            let isPrime = true;
-            console.log(isPrime);
-            // break;
-        };
+    // Check if number is 1 or 0
+    if (number === 0 || number === 1) {
+        return false
     }
+
+    // Check to see is *number* parameter is a prime number or not
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
 };
 
-checkPrime(7);
+console.log(checkPrime(17));
+
+console.log(checkPrime(7));
+
+console.log(checkPrime(10));
