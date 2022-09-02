@@ -1,0 +1,6 @@
+A variable is a storage place for a single value.
+There are types of variables:
+1. let
+2. var
+3. const
+
